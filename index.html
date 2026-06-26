@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STYLEHUB · Premium E-Commerce</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <div class="header-container">
+    <div class="logo">
+      <i class="fas fa-store"></i>STYLEHUB
+    </div>
+    <div class="cart-icon" id="cartIcon">
+      <i class="fas fa-shopping-cart"></i>
+      <span id="cartCount">0</span>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <!-- Hero -->
+    <section class="hero">
+      <h1>Discover <span class="accent">Premium</span> Products</h1>
+      <p>Free shipping on orders over $50 | 30-day returns</p>
+      <button class="shop-btn" id="shopBtn">Shop Now →</button>
+    </section>
+
+    <!-- Filters -->
+    <div class="filters">
+      <select id="category">
+        <option value="all">All Categories</option>
+        <option value="mens">Men's Fashion</option>
+        <option value="womens">Women's Fashion</option>
+        <option value="electronics">Electronics</option>
+        <option value="accessories">Accessories</option>
+      </select>
+      <select id="sort">
+        <option value="default">Sort by: Featured</option>
+        <option value="low">Price: Low to High</option>
+        <option value="high">Price: High to Low</option>
+      </select>
+      <button id="resetBtn" class="reset">Reset Filters</button>
+    </div>
+
+    <!-- Products and Cart -->
+    <div class="shop">
+      <div class="products" id="products"></div>
+      <div class="cart-sidebar" id="cartSidebar">
+        <h3><i class="fas fa-bag-shopping"></i> Your Cart</h3>
+        <div id="cartList" class="cart-list"></div>
+        <div class="cart-footer">
+          <div class="total">Total: $<span id="totalPrice">0.00</span></div>
+          <button id="checkout" class="checkout">Checkout</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- Toast -->
+<div id="toast" class="toast">Item added to cart</div>
+
+<script src="script.js"></script>
+</body>
+</html>
