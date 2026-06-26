@@ -62,8 +62,11 @@ ecommerce-product-page/
 🏢 Internship Information
 
 Organization	Optimus Automation
+
 Role	Web Development Intern
+
 Project	E-Commerce Product Page
 
 🏷️ Topics
-ecommerce product-page html-css javascript responsive-design internship optimus-automation frontend-development
+
+ecommerce   product-page   html-css   javascript   responsive-design   internship optimus-automation    frontend-development
